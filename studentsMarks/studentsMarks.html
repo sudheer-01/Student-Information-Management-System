@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Marks</title>
+    <link href="studentsMarks.css" rel="Stylesheet"/>
+</head>
+<body>
+    <div class="container">
+        <h2>Student Marks</h2>
+        <button id="fetchMarksBtn">Click Here to Get Your Marks</button>
+        <div id="studentInfo" class="student-info"></div>
+        <table id="marksTable" style="display: none;">
+            <thead>
+                <tr id="examHeaders"> <!-- Dynamic Exam Headers -->
+                    <th>Subject</th>
+                </tr>
+            </thead>
+            <tbody id="marksBody"></tbody>
+        </table>
+        
+    </div>
+
+    <script src="studentMarks.js"></script>
+</body>
+</html>

@@ -1,0 +1,129 @@
+/* Global styles */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(45deg, #6a11cb, #2575fc, #f72585, #ff61a6);
+    animation: spiralAnimation 2s linear infinite; /* Spiral animation for background */
+}
+
+/* Spiral animation for background */
+@keyframes spiralAnimation {
+    0% {
+        background: linear-gradient(45deg, #6a11cb, #2575fc, #f72585, #ff61a6); /* Initial vibrant gradient */
+    }
+    25% {
+        background: linear-gradient(135deg, #f72585, #ff61a6, #6a11cb, #2575fc); /* Rotate to create spiral effect */
+    }
+    50% {
+        background: linear-gradient(225deg, #ff61a6, #f72585, #2575fc, #6a11cb); /* Continue the rotation */
+    }
+    75% {
+        background: linear-gradient(315deg, #2575fc, #6a11cb, #ff61a6, #f72585); /* Further rotation for smooth transition */
+    }
+    100% {
+        background: linear-gradient(45deg, #6a11cb, #2575fc, #f72585, #ff61a6); /* Return to initial state */
+    }
+}
+
+/* Login box container */
+#loginBox {
+    background-color: rgba(0, 0, 0, 0.7); /* Dark background for contrast */
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4); /* Deep shadow for elegant depth */
+    text-align: center;
+    width: 90%;
+    max-width: 500px;
+    position: relative;
+    z-index: 2; /* Keep the login box above the animation */
+    border: 2px solid #ffd166; /* Soft golden border for extra elegance */
+}
+
+/* Buttons container */
+#buttons button {
+    background-color: #2575fc; /* Soft blue color for buttons */
+    color: white;
+    font-size: 1.5rem;
+    margin: 12px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+#buttons button:hover {
+    background-color: #6a11cb; /* Purple color on hover */
+    transform: scale(1.1);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3); /* Smooth shadow on hover */
+}
+
+#buttons button:active {
+    transform: scale(0.95);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Softer shadow on click */
+}
+
+/* Active state for buttons */
+#buttons button.active {
+    background-color: #f72585; /* Bold pink for active button */
+    box-shadow: 0 0 10px #fff; /* Subtle glowing effect */
+}
+
+/* Details container */
+.allDetails {
+    display: none;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.allDetails label {
+    display: block;
+    margin: 12px 0 6px;
+    font-size: 1.1rem;
+    color: #ffd166; /* Soft golden yellow for labels */
+}
+
+.allDetails select,
+.allDetails input[type="email"],
+.allDetails input[type="text"],
+.allDetails input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    background-color: #e9f1f7; /* Soft light background for inputs */
+    color: #023e8a; /* Dark blue text for readability */
+}
+
+.allDetails input[type="submit"] {
+    background-color: #2575fc; /* Soft blue background for submit button */
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.allDetails input[type="submit"]:hover {
+    background-color: #6a11cb; /* Purple background on hover */
+}
+
+/* H1 Styling */
+h1 {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 20px;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4); /* Stronger shadow for visibility */
+}

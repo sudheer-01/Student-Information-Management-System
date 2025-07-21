@@ -1,0 +1,201 @@
+/* Body styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(to bottom, #FF6F61, #08724b); /* Light Red to Light Green gradient */
+    font-family: 'Arial', sans-serif;
+    overflow: hidden; /* Prevents scrolling */
+}
+
+/* Main login box styling */
+#loginBox {
+    border: 3px solid #FFF9C4; /* Soft Yellow border for the login box */
+    padding: 30px;
+    width: 90%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    max-height: 80vh;
+    overflow-y: auto;
+    box-sizing: border-box;
+    background-color: #FFF9C4; /* Soft Yellow for the box */
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-out;
+}
+
+/* Fade in animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Heading styling */
+h1 {
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    color: #2C3E50; /* Neutral dark color for heading */
+    animation: slideUp 1s ease-out;
+}
+
+/* Slide-up animation for heading */
+@keyframes slideUp {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Select your role section */
+#buttons {
+    background-color: #FFF9C4; /* Soft Yellow to match the background of login box */
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+/* Button styling */
+button {
+    font-size: 1.4rem;
+    margin: 15px;
+    padding: 12px 20px;
+    cursor: pointer;
+    width: 45%;
+    background-color: #12a3c7; /* Light Red background for buttons */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0a647a; /* Darker Red on hover */
+}
+
+/* Form details styling */
+.allDetails {
+    margin-top: 30px;
+    font-size: 1.1rem;
+    width: 100%;
+}
+
+/* Label styling */
+.allDetails label {
+    display: block;
+    margin-bottom: 10px;
+    text-align: left;
+    font-weight: bold;
+    color: #2C3E50; /* Neutral dark color for labels */
+}
+
+/* Input fields and select styling */
+.allDetails select,
+.allDetails input[type="email"],
+.allDetails input[type="password"],
+.allDetails input[type="text"] {
+    font-size: 1.1rem;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    box-sizing: border-box;
+    border: 2px solid #A8E6CF; /* Light Green border for inputs */
+    border-radius: 8px;
+    transition: border 0.3s ease;
+}
+
+.allDetails select:focus,
+.allDetails input[type="email"]:focus,
+.allDetails input[type="password"]:focus,
+.allDetails input[type="text"]:focus {
+    border: 2px solid #A8E6CF; /* Same focus border as background */
+}
+
+/* Submit button styling */
+.allDetails input[type="submit"] {
+    font-size: 1.2rem;
+    margin-top: 25px;
+    padding: 15px 25px;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    background-color: #27de5e; /* Light Red background for submit button */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.allDetails input[type="submit"]:hover {
+    background-color: #166d30; /* Darker Red on hover */
+}
+
+/* Hiding sections */
+.allDetailsOfTeacher,
+.allDetailsOfHod,
+h2 {
+    display: none;
+}
+
+/* Glowing horizon effect */
+@keyframes glowingHorizon {
+    0% {
+        background: linear-gradient(to bottom, #e1594d, #66cda7);
+    }
+    50% {
+        background: linear-gradient(to bottom, #c0372b, #19a16f);
+    }
+    100% {
+        background: linear-gradient(to bottom, #dc2717, #10c683);
+    }
+}
+
+/* Apply glowing horizon effect */
+body {
+    animation: glowingHorizon 5s infinite alternate;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    button {
+        font-size: 1.3rem;
+        padding: 12px 20px;
+    }
+
+    .allDetails select,
+    .allDetails input[type="email"],
+    .allDetails input[type="password"],
+    .allDetails input[type="text"] {
+        font-size: 1rem;
+    }
+
+    #loginBox {
+        width: 95%;
+        max-height: 90vh;
+    }
+}
+#errorMessage {
+    display: none;  /* Initially hidden */
+    color: red;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+}

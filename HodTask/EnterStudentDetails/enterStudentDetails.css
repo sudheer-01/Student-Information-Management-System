@@ -1,0 +1,139 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    overflow: auto; /* Ensures scrolling when needed */
+}
+
+/* Page Title */
+h1 {
+    background-color: #007bff;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    width: fit-content;
+    margin: 20px auto;
+    font-size: 22px;
+}
+
+/* Label & Input */
+label {
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    margin: 15px 0;
+}
+
+input[type="number"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 220px;
+}
+
+/* Buttons */
+button, input[type="submit"] {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 250px;
+    display: block;
+    text-align: center;
+    transition: 0.3s ease;
+    margin: 10px auto;
+}
+
+/* Button Colors */
+#conformRows { background-color: #007bff; color: white; }
+#addRow { background-color: #28a745; color: white; }
+#save { background-color: #ff9800; color: white; }
+#getStudentsInfo { background-color: #dc3545; color: white; }
+
+/* Hover Effects */
+button:hover, input[type="submit"]:hover {
+    opacity: 0.8;
+}
+
+/* Centered Form Container */
+.form-container {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 850px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+/* Centering the Table Properly */
+.table-container {
+    width: 100%;
+    height: 100vh; /* Makes it take the full screen height */
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    margin: 0; /* Ensures no extra margins */
+}
+
+/* Table Styling */
+table {
+    width: 80%; /* Adjusts width */
+    max-width: 900px; /* Prevents it from being too wide */
+    border-collapse: collapse;
+    background: white;
+    text-align: center;
+    margin: auto; /* Extra safeguard for centering */
+}
+
+/* Optional: Keep header sticky while scrolling */
+thead {
+    background-color: #007bff;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+/* Reduce the width and padding of input fields inside the table */
+table input {
+    width: 90%; /* Reduce width to fit properly */
+    padding: 5px; /* Reduce padding */
+    font-size: 14px; /* Adjust font size */
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box; /* Ensures padding doesn't increase the width */
+}
+
+
+th, td {
+    padding: 8px; /* Reduce padding */
+    text-align: center;
+}
+th:nth-child(1), td:nth-child(1) { /* S.NO column */
+    width: 10%; /* Reduce width */
+    min-width: 50px; /* Ensure it doesn't shrink too much */
+    text-align: center; /* Keep numbers aligned */
+}
+
+
+th:nth-child(2), td:nth-child(2) { /* Hall Ticket Number column */
+    width: 25%; /* Adjust width */
+}
+
+th:nth-child(3), td:nth-child(3) { /* Student Name column */
+    width: 35%; /* Adjust width */
+}
+
+
+/* Smooth Scrolling */
+html, body {
+    height: 100%;
+    scroll-behavior: smooth;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIMS Login</title>
+    <link href="loginStyle.css" rel="Stylesheet"/>
+</head>
+<body>
+    
+    <div id="loginBox" class="loginBox">
+        <h1>Select your role:</h1>
+      <div id="buttons" class="loginBox">
+        <button id="hod" class="loginBox" onclick="switchTab('allDetailsOfHod')">HOD</button>
+        <button id="teacher" class="loginBox" onclick="switchTab('allDetailsOfTeacher')">Teacher</button>
+        <button id="student" class="loginBox" onclick="switchTab('allDetailsOfStudent')">Student</button>
+        <button id="Admin" class="loginBox" onclick="switchTab('allDetailsOfAdmin')">ADMIN</button>
+      </div>
+      <!-- HOD details -->
+      <form id="hodForm" class="allDetails allDetailsOfHod" action="/loginToHodDashBoard" method="POST">
+        <label for="hodId">HOD Id:</label>
+        <input type="text" id="HodId" name="HodId" placeholder="Enter your Id" required />
+        
+        <label for="passwordOfHod">Password:</label>
+        <input type="password" id="passwordOfHod" name="passwordOfHod" placeholder="Enter your Password" required />
+        
+        <p id="hodError" style="color: red; display: none;"></p> <!-- Error message placeholder -->
+    
+        <input type="submit" value="Login" />
+      </form>
+
+        <!-- Teacher details -->
+        <form id="teacherForm" class="allDetails allDetailsOfTeacher" action="/TeacherLogin" method="post" >
+            
+            <label for="facultyId">Faculty Id:</label>
+            <input type="text"  id="facultyId" name="facultyId" placeholder="Enter your Id" required/>
+            <label for="passwordOfTeacher">Password:</label>
+            <input type="password" id="passwordOfTeacher" 
+            name="passwordOfTeacher" placeholder="Enter Your Password" required />
+            <input type="submit" value="Login"/>
+        </form>
+        <!-- student details  -->
+        <form id="studentForm" class="allDetails allDetailsOfStudent" method="post" action="/studentCheckin">
+            <label for="year">Year:</label>
+            <select name="year" id="year" required>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+            <label for="htno">HTNO:</label>
+            <input type="text" id="htno" name="htno" placeholder="Enter Hallticket Number" required/>
+            <input type="submit" value="Get Marks" />
+        </form>
+        <form id="adminForm" class="allDetails allDetailsOfAdmin" method="post" action="/adminLogin">
+            <label for="idOfAdmin">ID:</label>
+            <input type="text" id="idOfAdmin" name="idOfAdmin" placeholder="Enter id"  required/>
+            <label for="passwordOfAdmin">Password</label>
+            <input type="password" id="passwordOfAdmin" name="passwordOfAdmin" placeholder="Enter password"/>
+            <input type="submit" value="Login"/>
+        </form>
+    </div>
+    <script src="loginScript.js"></script>
+</body>
+</html>

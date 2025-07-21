@@ -1,0 +1,78 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Dashboard Container */
+.dashboard-container {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 400px;
+}
+
+/* Headings */
+h1 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Selection Container */
+.selection-container {
+    margin: 20px 0;
+}
+
+label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+select {
+    padding: 8px;
+    font-size: 16px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Options (Buttons as Links) */
+.options a {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    transition: 0.3s ease;
+}
+
+/* Button Colors */
+.blue {
+    background-color: #007bff;
+}
+
+.green {
+    background-color: #28a745;
+}
+
+.red {
+    background-color: #dc3545;
+}
+
+/* Hover Effects */
+.options a:hover {
+    opacity: 0.8;
+}

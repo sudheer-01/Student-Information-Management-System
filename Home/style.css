@@ -1,0 +1,81 @@
+/* Body styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full-screen height */
+    width: 100vw;  /* Full-screen width */
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: url('login\ image.webp') no-repeat center center/cover; /* Background image */
+    overflow: hidden; /* Prevent scrolling */
+}
+
+/* Welcome container */
+#welcome {
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    border: 2px solid rgba(255, 255, 255, 0.3); /* Border for visibility */
+    backdrop-filter: blur(9px); /* Glass effect */
+    padding: 40px 20px; /* Inner spacing */
+    width: 90%; /* Responsive width */
+    max-width: 500px; /* Max width of container */
+    border-radius: 20px; /* Rounded corners */
+    text-align: center; /* Center align text */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Drop shadow */
+}
+
+/* Heading styles */
+#loginHead {
+    font-size: 2rem; /* Large font size */
+    font-weight: bold; /* Bold text */
+    margin-bottom: 20px; /* Space below heading */
+    text-transform: uppercase; /* Uppercase letters */
+}
+
+#loginHead span {
+    color: #f9c802; /* Secondary color for emphasis */
+    display: block; /* New line for "Management System" */
+    margin-top: 10px; /* Space above span text */
+}
+
+/* Button styles */
+button {
+    font-size: 1.2rem; /* Button text size */
+    margin: 10px; /* Space between buttons */
+    padding: 10px 20px; /* Inner padding */
+    border: none; /* Remove default border */
+    border-radius: 30px; /* Rounded button shape */
+    cursor: pointer; /* Pointer cursor on hover */
+    background: linear-gradient(90deg, #ff8a00, #e52e71); /* Gradient background */
+    color: white; /* White text */
+    transition: all 0.3s ease; /* Smooth hover effect */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+button:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Bigger shadow on hover */
+}
+
+/* Anchor tag styles inside buttons */
+button a {
+    text-decoration: none; /* Remove underline from links */
+    color: white; /* Ensure text color stays white */
+    font-weight: bold; /* Bold text */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #welcome {
+        padding: 20px; /* Reduce padding for small screens */
+    }
+
+    #loginHead {
+        font-size: 1.5rem; /* Smaller font size for heading */
+    }
+
+    button {
+        font-size: 1rem; /* Smaller button text */
+        padding: 8px 16px; /* Smaller button padding */
+    }
+}

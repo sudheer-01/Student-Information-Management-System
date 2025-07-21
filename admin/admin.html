@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <h1>Welcome Admin</h1>
+    
+
+    <!-- Filter Dropdown -->
+    <label for="statusFilter">Filter by Status:</label>
+    <select id="statusFilter">
+        <option value="All">All</option>
+        <option value="Pending">Pending</option>
+        <option value="Approved">Approved</option>
+        <option value="Rejected">Rejected</option>
+    </select>
+
+    <!-- Table to Show Requests -->
+    <table id="hodRequestsTable">
+        <thead>
+            <tr>
+                <th>HOD ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Year</th>
+                <th>Branch</th>
+                <th>Status</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="hodRequestsBody">
+            <!-- HOD Requests will be dynamically inserted here -->
+        </tbody>
+    </table>
+
+    <script src="admin.js"></script>
+</body>
+</html>

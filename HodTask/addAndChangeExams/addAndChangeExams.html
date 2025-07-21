@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Exams</title>
+    <link rel="stylesheet" href="addAndChangeExams.css">
+</head>
+<body>
+    <h2>Manage Exams (Add & Remove Exams)</h2>
+    <label for="yearSelect">Select Year:</label>
+    <select id="yearSelect"></select>
+
+    <label for="branchSelect">Select Branch:</label>
+    <select id="branchSelect"></select>
+
+    <label for="examName">Enter New Exam Name:</label>
+    <input type="text" id="examName" placeholder="e.g., Final Exam">
+    <button id="addExam">Add Exam</button>
+
+    <h3>Existing Exams:</h3>
+    <table id="examsTable">
+        <thead>
+            <tr>
+                <th>Exam Name</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <script src="addAndChangeExams.js"></script>
+</body>
+</html>

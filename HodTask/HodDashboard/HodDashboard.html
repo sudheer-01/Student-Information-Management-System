@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOD Dashboard</title>
+    <link rel="stylesheet" href="HodDashboard.css">
+</head>
+<body>
+    <!-- <form id="hodDashboardForm" method="post" action="/toGetBranchAndYearOfHod"> -->
+        <body>
+            <div class="dashboard-container">
+                <h1>Welcome, HOD!</h1>
+                <p id="hodBranch">Branch: Loading...</p>  
+                <p id="hodYears">Available Years: Loading...</p>  
+        
+                <div class="options">
+                    <a href="/addBranchesAndSubjects.html" class="btn green">Add Branches and Subjects</a>
+                    <a href="/viewFacultyRequests.html" class="btn blue">View Faculty Requests</a>
+                    <a href="/enterStudentDetails.html" class="btn red">Enter Student Details</a>
+                    <a href="/addAndChangeExams.html" class="btn green">Add and Change Exams</a>
+                    <a href="/generateStudentReports.html" class="btn blue">Generate Student Reports</a>
+                    <a href="/viewMarksUpdateRequests.html" class="btn red">View Marks Update Requests</a>
+                </div>
+            </div>  
+            <script src="HodDashboard.js"></script>    
+        </body>
+          
+</body>
+</html>
+ <!-- here the options needs to be replaced with the : if the hod is of csm then based on year the branches 
+    should be avaliable like for 2nd year CSM-a, csm - b and for 3rd year csm only -->

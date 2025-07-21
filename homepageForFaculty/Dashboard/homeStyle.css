@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #0f5852; /* Light blue background */
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* ----------------------------------------------------------------------------------------------------- */
+/* Navbar Styling 
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #384959;
+    padding: 12px 0;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+nav a {
+    text-decoration: none;
+    color: #070606; 
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+nav li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 18px;
+    border: 2px solid #384959;
+    margin-left: 3rem;
+    border-radius: 8px;
+    background-color: #88BDF2;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+nav li:hover {
+    background-color: #BDDDFC; 
+    color: #384959; 
+    transform: scale(1.08);
+    border-color: #88BDF2;
+}*/
+/* ------------------------------------------------------------------------------------------------- */
+/* Teacher Details Section */
+#teacherDetails {
+    border: 4px solid #000000; /* Charcoal blue border */
+    font-size: 0.9rem;
+    width: 90%;
+    padding: 25px;
+    margin: 30px 0;
+    border-radius: 8px;
+    box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff; /* Light blue */
+    color: hsl(0, 0%, 100%); /* Charcoal blue text */
+    text-align: center;
+}
+
+#teacherDetails h1 {
+    color: #000000; /* Charcoal blue for headings */
+    font-size: 1.5rem;
+}
+
+/* Completed Exams Section */
+#completedExams {
+    display: flex;
+    width: 90%;
+    max-width: 900px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+#completedExams h1 {
+    border: 2px solid #384959; /* Charcoal blue border */
+    padding: 18px 50px;
+    width: 220px;
+    text-align: center;
+    border-radius: 6px;
+    background-color: #1f1919c9; /* Light blue */
+    color: #ffffff; /* Charcoal blue text */
+    box-shadow: 4px 4px 10px rgb(98, 178, 231);
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+#completedExams h1:hover {
+    background-color: #1f1919c9; /* Light blue hover */
+    transform: translateY(-5px);
+    box-shadow: 6px 6px 15px rgb(248, 248, 248);
+    color: #ffffff; /* Charcoal blue text */
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIMS Create Account</title>
+    <link href="newAccountStyle.css" rel="Stylesheet"/>
+</head>
+<body>
+    <div id="loginBox" class="loginBox">
+        <h1>Select your role:</h1>
+      <div id="buttons" class="loginBox">
+        <button id="hod" class="loginBox" onclick="switchTab('allDetailsOfHod')">HOD</button>
+        <button id="teacher" class="loginBox" onclick="switchTab('allDetailsOfTeacher')">Teacher</button>
+      </div>
+      <!-- HOD details -->
+        <h2>Creating HOD account</h2>
+        <form id="hodForm" class="allDetails allDetailsOfHod">
+            <label for="yearOfHod">Year:</label>
+            <select name="yearOfHod" id="yearOfHod" required onchange="toggleBranchVisibility()">
+                <option value="1">1</option>
+                <option value="2,3,4">2,3,4</option>
+            </select>
+
+            <div id="branchSection" style="display: none;">
+                <label for="branchOfHod">Branch:</label>
+                <select name="branchOfHod" id="branchOfHod">
+                    <option value="Civil">Civil</option>
+                    <option value="Mech">Mech</option>
+                    <option value="ECE">ECE</option>
+                    <option value="EEE">EEE</option>
+                    <option value="CSE">CSE</option>
+                    <option value="CSM">CSM</option>
+                    <option value="CSO">CSO</option>
+                    <option value="CSW">CSW</option>
+                    <option value="CSD">CSD</option>
+                </select>
+            </div>
+
+            <label for="hodId">HOD ID:</label>
+            <input type="text" id="hodId" name="hodId" placeholder="Enter HOD ID" required/>
+
+            <label for="hodName">Name:</label>
+            <input type="text" id="hodName" name="hodName" placeholder="Enter your name" required/>
+
+            <label for="emailOfHod">Email:</label>
+            <input type="email" id="emailOfHod" name="emailOfHod" placeholder="Enter your Email" required/>
+
+            <label for="passwordOfHod">Password:</label>
+            <input type="password" id="passwordOfHod" name="passwordOfHod" placeholder="Enter Password" required/>
+
+            <label for="reEnterPassword">Confirm Password:</label>
+            <input type="password" id="reEnterPassword" name="reEnterPassword" placeholder="Re-Enter Password" required/>
+            <button type="submit" value="Create Account" id="hodSubmitButton">Create Account</button>
+           
+            <div id="errorMessage"></div> <!-- For displaying the backend respose -->            
+        </form>
+        <!-- Teacher details -->
+         <h2>Creating Teacher Account</h2>
+        <form id="teacherForm" class="allDetails allDetailsOfTeacher">
+            <label for="teacherName">Name:</label>
+            <input type="text" id="teacherName" placeholder="Enter your name" name="teacherName" required/> 
+            <label for="facultyId">Faculty Id:</label>
+            <input type="text" id="facultyId" name="facultyId" placeholder="Enter your Id" required/>
+            <label for="emailOfTeacher">Email:</label>
+            <input type="email"  id="emailOfTeacher" placeholder="Enter your Email" name="emailOfTeacher" required/>
+            <label for="passwordOfTeacher">Password:</label>
+            <input type="password" id="passwordOfTeacher" placeholder="Enter your Password" name="passwordOfTeacher" required/>
+            <label for="reEnterPasswordTeacher">Confirm Password</label>
+            <input type="password" id="reEnterPasswordTeacher" name="reEnterPasswordTeacher" placeholder="Re-Enter Password" required/>
+            <button type="submit" value="Create Account" id="teacherSubmitButton">Create Account</button>
+        </form>
+    </div>
+    <script src="newAccountScript.js"></script>
+</body>
+</html>
